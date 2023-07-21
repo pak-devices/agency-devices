@@ -17,7 +17,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 gc = gspread.authorize(credentials)
 
 # Replace with your Google Sheet name
-sheet_name = 'akp-devices'  
+sheet_name = 'pak-devices'  
 sheet = gc.open(sheet_name).sheet1
 
 def create_data(fullname, device, barcode):
