@@ -145,32 +145,15 @@ else:
     st.info(f"No devices for {fullname}.")
 
 
-# Style for buttons, section for responsive buttons
-button_width_desktop = "118px"
-
-# Adjust this value based on your preference for mobile devices
-button_width_mobile = "100%"  
-
+# Style for buttons
+button_width = "118px"
 st.markdown(
     f"""
     <style>
-        @media only screen and (min-width: 768px) {{
-            div.stButton > button:first-child {{
-                width: {button_width_desktop};
-                height: auto;
-            }}
-        }}
-        @media only screen and (max-width: 767px) {{
-            div.stButton > button:first-child {{
-                width: {button_width_mobile};
-                height: auto;
-            }}
+        div.stButton > button:first-child {{
+        width: {button_width};
+        height: auto;
         }}
     </style>
     """, unsafe_allow_html=True,
 )
-
-
-
-
-
